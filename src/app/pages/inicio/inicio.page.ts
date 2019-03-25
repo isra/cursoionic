@@ -48,6 +48,11 @@ export class InicioPage implements OnInit {
       icon: 'flag',
       label: 'Fabs',
       path: '/fabs'
+    },
+    {
+      icon: 'grid',
+      label: 'Grid',
+      path: '/grid'
     }
   ]
 

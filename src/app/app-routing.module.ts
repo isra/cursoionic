@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'checkbox', loadChildren: './pages/checked/checked.module#CheckedPageModule' },
   { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
   { path: 'fabs', loadChildren: './pages/fabs/fabs.module#FabsPageModule' },
+  { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
 ];
 
 @NgModule({
