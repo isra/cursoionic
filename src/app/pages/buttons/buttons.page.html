@@ -1,0 +1,100 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>buttons</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="star-half"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button size="small" color="primary">
+    Primary
+  </ion-button>
+  <ion-button size="default" color="secondary">
+    Secondary
+  </ion-button>
+  <ion-button size="large" color="tertiary">
+    Tertiary
+  </ion-button>
+
+  <ion-button expand="block">
+    Expand block
+  </ion-button>
+
+  <ion-button expand="full">
+    expand full
+  </ion-button>
+
+
+  <ion-button fill="clear">
+    fill clear
+  </ion-button>
+
+  <ion-button fill="outline">
+    fill outline
+  </ion-button>
+
+  <ion-button fill="solid">
+    fill solid
+  </ion-button>
+
+  <!-- Anchor -->
+<!-- <ion-button href="#">Anchor</ion-button> -->
+
+<!-- Round -->
+<ion-button shape="round">Round Button</ion-button>
+
+<!-- Fill -->
+<ion-button expand="full" fill="outline">Outline + Full</ion-button>
+<ion-button expand="block" fill="outline">Outline + Block</ion-button>
+<ion-button shape="round" fill="outline">Outline + Round</ion-button>
+
+<!-- Icons -->
+<ion-button>
+  <ion-icon slot="start" name="star"></ion-icon>
+  Left Icon
+</ion-button>
+
+<ion-button>
+  Right Icon
+  <ion-icon slot="end" name="star"></ion-icon>
+</ion-button>
+
+<ion-button>
+  <ion-icon slot="icon-only" name="star"></ion-icon>
+</ion-button>
+
+<ion-button fill="clear">
+  <ion-icon slot="icon-only" name="star-half"></ion-icon>
+</ion-button>
+
+<ion-button fill="clear" shape="round">
+  <ion-icon slot="icon-only" name="star"></ion-icon>
+</ion-button>
+
+<ion-row>
+  <ion-col>
+    <ion-button expand="full" routerLink="/">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+      Regresar
+    </ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button expand="full" routerLink="/action-sheet">
+      Next
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-button>
+  </ion-col>
+</ion-row>
+
+</ion-content>

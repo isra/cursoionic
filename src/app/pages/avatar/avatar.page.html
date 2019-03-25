@@ -1,0 +1,40 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>avatar</ion-title>
+    <ion-buttons slot="end">
+
+        <ion-avatar>
+          <img src="/assets/stan-lee.jpg" alt="Stan lee" />
+        </ion-avatar>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-avatar *ngFor="let i of [1, 2, 3]">
+    <img src="/assets/stan-lee.jpg" alt="Stan">
+  </ion-avatar>
+
+  <ion-chip *ngFor="let i of [1, 2, 3, 4, 5]">
+    <ion-avatar>
+      <img src="/assets/stan-lee.jpg" alt="Stan">
+    </ion-avatar>
+    <ion-label>Stan lee chip</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let i of [1, 2, 3, 4, 5]">
+      <ion-avatar slot="start">
+        <img src="/assets/stan-lee.jpg" alt="Stan">
+      </ion-avatar>
+      <ion-label>Stan Lee</ion-label>
+    </ion-item>
+</ion-list>
+
+
+</ion-content>

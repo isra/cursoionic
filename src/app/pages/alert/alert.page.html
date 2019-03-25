@@ -1,0 +1,15 @@
+<app-header-bar [title]="title || 'Alert controller'"></app-header-bar>
+<ion-content padding>
+  <h1>Alert</h1>
+  <ion-button expand="full" (click)="presentSimpleAlert($event)">
+    <ion-label>Show simple alert</ion-label>
+  </ion-button>
+
+  <ion-button expand="full" (click)="presentAlertPrompt($event)">
+    Alert prompt
+  </ion-button>
+
+  <ion-button expand="full" (click)="presentAlertRadio($event)">
+    Alert Radio
+  </ion-button>
+</ion-content>
