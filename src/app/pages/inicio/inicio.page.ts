@@ -53,6 +53,11 @@ export class InicioPage implements OnInit {
       icon: 'grid',
       label: 'Grid',
       path: '/grid'
+    },
+    {
+      icon: 'infinite',
+      label: 'Infinite Scroll',
+      path: '/infinite-scroll'
     }
   ]
 

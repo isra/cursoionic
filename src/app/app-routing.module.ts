@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
   { path: 'fabs', loadChildren: './pages/fabs/fabs.module#FabsPageModule' },
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
+  { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
 ];
 
 @NgModule({
