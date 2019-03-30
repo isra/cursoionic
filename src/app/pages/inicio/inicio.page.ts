@@ -58,8 +58,13 @@ export class InicioPage implements OnInit {
       icon: 'infinite',
       label: 'Infinite Scroll',
       path: '/infinite-scroll'
+    },
+    {
+      icon: 'text',
+      label: 'Inputs',
+      path: '/input'
     }
-  ]
+  ];
 
   constructor() { }
 
