@@ -63,6 +63,11 @@ export class InicioPage implements OnInit {
       icon: 'text',
       label: 'Inputs',
       path: '/input'
+    },
+    {
+      icon: 'list',
+      label: 'List',
+      path: '/list'
     }
   ];
 
