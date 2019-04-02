@@ -28,7 +28,7 @@ export class ListPage implements OnInit {
       this.users = response;
     }, err => {
       console.log("Error ListPage => getUsers", err);
-    })
+    });
   }
 
   favorite(user: any): void {
