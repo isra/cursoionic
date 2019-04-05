@@ -63,5 +63,10 @@
         "icon": "reorder",
         "label": "Reorder",
         "path": "/reorder"
+    }, 
+    {
+        "icon": "phone-portrait",
+        "label": "modal",
+        "path": "/modal"
     }
 ]
