@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    HeaderBarComponent
+    HeaderBarComponent,
+    MenuComponent
   ],
   exports: [
-    HeaderBarComponent
+    HeaderBarComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }

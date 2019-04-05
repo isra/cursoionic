@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 import { MenuService } from '../../services/menu.service';
-
 import { ItemMenu } from '../../interfaces/item-menu';
-import { Observable } from 'rxjs';
+
+import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
 })
-export class InicioPage implements OnInit {
+export class MenuComponent implements OnInit {
 
   items: Observable<ItemMenu[]>;
 

@@ -1,0 +1,17 @@
+<ion-menu side="start" menuId="menuLeft" contentId="idRouterOutlet" type="overlay">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Componentes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle *ngFor="let item of items | async">
+        <ion-item [routerLink]="item.path">
+          <ion-icon slot="start" [name]="item.icon"></ion-icon>
+          <ion-label>{{item.label}}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
