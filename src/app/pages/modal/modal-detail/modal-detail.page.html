@@ -1,9 +1,22 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
-    <ion-title>modal-detail</ion-title>
+    <ion-title>{{name}} - {{lastname}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="salirSinParametros()" color="primary">
+          Salir
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-button color="primary" expand="full" (click)="salirSinParametros()">
+    Salir de modal sin parámetros
+  </ion-button>
+
+  <ion-button color="secondary" expand="full" (click)="salirConParametros()">
+    Salir con parámetros
+  </ion-button>
 
 </ion-content>

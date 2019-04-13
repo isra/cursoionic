@@ -23,11 +23,14 @@ export class ModalPage implements OnInit {
       component: ModalDetailPage,
       componentProps: {
         name: 'Israel',
-        lastName: 'Salgado'
+        lastname: 'Salgado'
       }
     });
 
     await modal.present();
+
+    const { data } = await modal.onDidDismiss();
+    console.log(data);
 
   }
 
