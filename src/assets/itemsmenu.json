@@ -63,10 +63,15 @@
         "icon": "reorder",
         "label": "Reorder",
         "path": "/reorder"
-    }, 
+    },
     {
         "icon": "phone-portrait",
         "label": "modal",
         "path": "/modal"
+    },
+    {
+        "icon": "refresh",
+        "label": "Loading",
+        "path": "/loading"
     }
 ]
