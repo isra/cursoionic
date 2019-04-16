@@ -78,5 +78,10 @@
         "icon": "tablet-portrait",
         "label": "Popover",
         "path": "/popover"
+    },
+    {
+        "icon": "refresh-circle",
+        "label": "Refresher",
+        "path": "/refresher"
     }
 ]
