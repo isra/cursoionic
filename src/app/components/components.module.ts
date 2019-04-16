@@ -5,16 +5,19 @@ import { IonicModule } from '@ionic/angular';
 
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { MenuComponent } from './menu/menu.component';
+import { PopListComponent } from './pop-list/pop-list.component';
 
 
 @NgModule({
   declarations: [
     HeaderBarComponent,
-    MenuComponent
+    MenuComponent,
+    PopListComponent
   ],
   exports: [
     HeaderBarComponent,
-    MenuComponent
+    MenuComponent,
+    PopListComponent
   ],
   imports: [
     CommonModule,

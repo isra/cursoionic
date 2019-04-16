@@ -1,0 +1,11 @@
+<ion-list>
+  <ion-item *ngFor="let item of items | async"
+    button
+    detail
+    (click)="continue(item)"
+  >
+    <ion-icon slot="start" name="{{item.icon}}"></ion-icon>
+    <ion-label> {{ item.label }}</ion-label>
+
+  </ion-item>
+</ion-list>

@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>popover</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showList($event)">
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-button color="primary" expand="full" (click)="showList($event)">
+    <ion-icon slot="icon-only" name="person-add"></ion-icon>
+    Agregar persona
+  </ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+      <ion-title>footer</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="showList($event)">
+          <ion-icon slot="icon-only" name="contact"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

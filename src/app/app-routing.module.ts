@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },
   { path: 'reorder', loadChildren: './pages/reorder/reorder.module#ReorderPageModule' },
   { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
-  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' }
+  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
+  { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' }
 ];
 
 @NgModule({
