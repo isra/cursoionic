@@ -16,4 +16,9 @@ export class DataService {
     const url = 'https://jsonplaceholder.typicode.com/albums/';
     return this.http.get<any>(url);
   }
+
+  getHeroes(): Observable<any> {
+    const url = '/assets/superheroes.json';
+    return this.http.get(url);
+  }
 }

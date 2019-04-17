@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' },
   { path: 'refresher', loadChildren: './pages/refresher/refresher.module#RefresherPageModule' },
   { path: 'range', loadChildren: './pages/range/range.module#RangePageModule' },
-  { path: 'searchbar', loadChildren: './pages/searchbar/searchbar.module#SearchbarPageModule' }
+  { path: 'searchbar', loadChildren: './pages/searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' }
 ];
 
 @NgModule({

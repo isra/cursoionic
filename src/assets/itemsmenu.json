@@ -93,5 +93,10 @@
         "icon": "list",
         "label": "Searchbar",
         "path": "/searchbar"
+    },
+    {
+        "icon": "attach",
+        "label": "Segment",
+        "path": "/segment"
     }
 ]

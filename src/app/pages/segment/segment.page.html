@@ -1,0 +1,57 @@
+<app-header-bar title="Segment"></app-header-bar>
+
+<ion-toolbar>
+  <!-- Scrollable Segment -->
+  <ion-segment scrollable>
+    <ion-segment-button>
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button checked>
+      <ion-icon name="heart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="basket"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-toolbar>
+  <ion-segment #segmentHeroes (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="">
+      <ion-label>Todos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Marvel Comics">
+      <ion-label>Marvel Comics</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="DC Comics">
+      <ion-label>DC Comics</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let hero of (heroes | async) | filter:valueSegment:'publisher'"
+    class="animated fadeIn fast">
+      <ion-label>
+        <h3>{{ hero.superhero }} <small>{{ hero.alter_ego }}</small></h3>
+        <p>{{ hero.first_appearance }}</p>
+      </ion-label>
+      <ion-label slot="end" text-right>{{ hero.publisher }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
