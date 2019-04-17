@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { delay } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -19,6 +21,8 @@ export class DataService {
 
   getHeroes(): Observable<any> {
     const url = '/assets/superheroes.json';
-    return this.http.get(url);
+    return this.http.get(url).pipe(
+      delay(2000)
+    );
   }
 }
