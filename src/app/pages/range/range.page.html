@@ -1,0 +1,23 @@
+<app-header-bar title="Range and Progress Bar"></app-header-bar>
+
+<ion-content>
+
+
+  <h1>Progress Bar</h1>
+
+  <ion-progress-bar [value]="progress"></ion-progress-bar>
+
+  <ion-range
+  min="0"
+  max="100"
+  pin="true"
+  (ionChange)="changeRange($event)"
+  >
+  <ion-label slot="start">0</ion-label>
+  <ion-label slot="end">100</ion-label>
+</ion-range>
+
+
+<ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+</ion-content>

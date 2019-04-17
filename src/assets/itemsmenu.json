@@ -83,5 +83,15 @@
         "icon": "refresh-circle",
         "label": "Refresher",
         "path": "/refresher"
+    },
+    {
+        "icon": "football",
+        "label": "Range and Progress Bar",
+        "path": "/range"
+    },
+    {
+        "icon": "list",
+        "label": "Searchbar",
+        "path": "/searchbar"
     }
 ]
