@@ -98,5 +98,10 @@
         "icon": "attach",
         "label": "Segment",
         "path": "/segment"
+    },
+    {
+        "icon": "filing",
+        "label": "Slides",
+        "path": "/slides"
     }
 ]
