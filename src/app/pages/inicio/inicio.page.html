@@ -13,7 +13,7 @@
       <ion-label>Lista de componentes</ion-label>
     </ion-list-header>
     <ion-item [routerLink]="item.path" *ngFor="let item of items | async" detail>
-      <ion-icon name="{{item.icon}}" slot="start"></ion-icon>
+      <ion-icon color="primary" name="{{item.icon}}" slot="start"></ion-icon>
       <ion-label>{{item.label}}</ion-label>
     </ion-item>
   </ion-list>
