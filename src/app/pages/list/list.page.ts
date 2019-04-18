@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
-import { IonList } from '@ionic/angular';
+import { IonList, ToastController } from '@ionic/angular';
 
 import { UsersService } from '../../services/users.service';
 
@@ -16,7 +16,8 @@ export class ListPage implements OnInit {
   users: any[];
 
   constructor(
-    private usersService: UsersService
+    private usersService: UsersService,
+    private toastCtrl: ToastController
   ) { }
 
   ngOnInit() {
@@ -33,15 +34,30 @@ export class ListPage implements OnInit {
 
   favorite(user: any): void {
     console.log('favorite', user);
+    this.presentToast('Agregado a favoritos');
     this.list.closeSlidingItems();
   }
   share(user: any): void {
     console.log('share', user);
+    this.presentToast('Compartido!!!');
     this.list.closeSlidingItems();
   }
   remove(user: any): void {
-    console.log('remove', user);
+    this.presentToast('Se ha eliminado');
     this.list.closeSlidingItems();
+  }
+
+
+  async presentToast(message: string) {
+    const toast = await this.toastCtrl.create({
+      message,
+      duration: 2000,
+      color: 'primary',
+      showCloseButton: true,
+      closeButtonText: 'cerrar'
+    });
+
+    toast.present();
   }
 
 }
