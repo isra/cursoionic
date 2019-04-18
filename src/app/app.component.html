@@ -1,39 +1,27 @@
-<ion-split-pane when="md" contentId="idRouterOutlet">
-  <!-- <ion-menu menuId="avocadoMenu" side="start" type="overlay">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Awesome avocado menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      Awesome avocado content
-    </ion-content>
-  </ion-menu> -->
-  <!-- <app-menu></app-menu> -->
-
-  <ion-menu side="start" menuId="menuLeft" contentId="idRouterOutlet" type="overlay">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Componentes</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-menu-toggle autoHide="false" *ngFor="let item of items | async">
-          <ion-item [routerLink]="item.path">
-            <ion-icon slot="start" [name]="item.icon"></ion-icon>
-            <ion-label>{{item.label}}</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+<ion-app>
+  <ion-split-pane when="md" contentId="idRouterOutlet">
+    <ion-menu side="start" menuId="menuLeft" contentId="idRouterOutlet" type="overlay">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Componentes</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle autoHide="false" *ngFor="let item of items | async">
+            <ion-item [routerLink]="item.path">
+              <ion-icon slot="start" [name]="item.icon"></ion-icon>
+              <ion-label>{{item.label}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
 
 
-  <ion-router-outlet id="idRouterOutlet"></ion-router-outlet>
-</ion-split-pane>
-
-
+    <ion-router-outlet id="idRouterOutlet"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
 
 
 

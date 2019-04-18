@@ -103,5 +103,10 @@
         "icon": "filing",
         "label": "Slides",
         "path": "/slides"
+    },
+    {
+        "icon": "cog",
+        "label": "Tabs",
+        "path": "/tabs/account"
     }
 ]
